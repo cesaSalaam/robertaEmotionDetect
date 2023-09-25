@@ -28,7 +28,7 @@ The model was trained using `AutoModelForSequenceClassification.from_pretrained`
 
 #### Inference
 
-There are multiple ways to use this model in Hugginface Transformers. Possibly the simplest is using a pipeline
+There are multiple ways to use this model in Huggingface Transformers. Possibly the simplest is using a pipeline:
 
 ```python
 from transformers import pipeline
@@ -93,7 +93,7 @@ With a threshold of 0.5 applied to binarize the model outputs, as per the above 
 | surprise       | 0.981    | 0.750     | 0.404  | 0.525 | 0.542 | 141     | 0.5       |
 | neutral        | 0.782    | 0.694     | 0.604  | 0.646 | 0.492 | 1787    | 0.5       |
 
-Optimizing the threshold per label for the one that gives the optimum F1 metrics gives slightly better metrics (sacrificing some precision for a greater gain in recall, hence to the benefit of F1):
+Optimizing the threshold per label for the one that gives the optimum F1 metrics gives slightly better metrics - sacrificing some precision for a greater gain in recall, hence to the benefit of F1 (how this was done is shown in the above notebook):
 
 |                | accuracy | precision | recall | f1    | mcc   | support | threshold |
 | -------------- | -------- | --------- | ------ | ----- | ----- | ------- | --------- |
