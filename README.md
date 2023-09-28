@@ -130,6 +130,18 @@ Optimizing the threshold per label for the one that gives the optimum F1 metrics
 | surprise       | 0.977    | 0.543     | 0.674  | 0.601 | 0.593 | 141     | 0.15      |
 | neutral        | 0.758    | 0.598     | 0.810  | 0.688 | 0.513 | 1787    | 0.25      |
 
+This improves the overall metrics:
+
+- Precision: 0.542
+- Recall: 0.577
+- F1: 0.541
+
+Or if calculated weighted by the relative size of the support of each label:
+
+- Precision: 0.572
+- Recall: 0.677
+- F1: 0.611
+
 #### Commentary on the dataset
 
 Some labels (E.g. gratitude) when considered independently perform very strongly with F1 exceeding 0.9, whilst others (E.g. relief) perform very poorly.
